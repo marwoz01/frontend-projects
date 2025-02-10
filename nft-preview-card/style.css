@@ -1,0 +1,150 @@
+body {
+  font-family: "Outfit", serif;
+  background-color: #0d192c;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: #15263f;
+  color: white;
+  width: 350px;
+  height: 596px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 12px;
+  padding: 24px 24px;
+}
+
+.card img {
+  height: 352px;
+  border-radius: 12px;
+  transition: 0.15s ease-in-out;
+}
+
+.image {
+  position: relative;
+  cursor: pointer;
+}
+
+.image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 99%;
+  border-radius: 12px;
+  background-color: hsl(178, 100%, 50%);
+  opacity: 0;
+  transition: 0.15s ease-in-out;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.15s ease-in-out;
+}
+
+.overlay img {
+  height: 50px;
+}
+
+.image:hover::after {
+  opacity: 0.5;
+}
+
+.image:hover .overlay {
+  opacity: 1;
+}
+
+.content h2 {
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.content h2:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.content p {
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  font-size: 19px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+.eth {
+  display: flex;
+  align-items: center;
+}
+
+.eth img {
+  height: 20px;
+  padding-right: 8px;
+}
+
+.price {
+  color: hsl(178, 100%, 50%);
+  font-size: 16px;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+}
+
+.time img {
+  height: 20px;
+  padding-right: 6px;
+}
+
+.time span {
+  color: hsl(215, 51%, 70%);
+  font-size: 16px;
+}
+
+.creator {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-top: 1px solid #2e405a;
+  padding-top: 8px;
+}
+
+.creator img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid hsl(0, 0%, 100%);
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.creator p {
+  font-size: 18px;
+}
+
+.creator span {
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+.creator span:hover {
+  color: hsl(178, 100%, 50%);
+}
