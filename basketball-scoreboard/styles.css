@@ -1,0 +1,124 @@
+@font-face {
+  font-family: CursedTimerUlil-Aznm;
+  src: url(/fonts/CursedTimerUlil-Aznm.ttf);
+}
+
+body {
+  font-family: Inter, serif;
+  color: #f9fafb;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: #111827;
+  height: 500px;
+  width: 800px;
+  margin: 80px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.timer-section {
+  width: 100%;
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timer-section h2 {
+  font-size: 120px;
+  font-family: CursedTimerUlil-Aznm;
+  margin: 24px 0 0 0;
+}
+
+.timer-section button {
+  background-color: #111827;
+  border: 2px solid #9ca3af;
+  padding: 12px;
+  font-family: CursedTimerUlil-Aznm;
+  color: #9ca3af;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.timer-section button:hover {
+  color: #f9fafb;
+  border: 2px solid #f9fafb;
+}
+
+.bottom-section {
+  display: flex;
+  height: 65%;
+}
+
+.period-section {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.period-section h2 {
+  color: #10b981;
+  background-color: #080001;
+  padding: 10px;
+  font-size: 60px;
+  font-family: CursedTimerUlil-Aznm;
+  margin-bottom: 24px;
+}
+
+.period-section p {
+  font-size: 20px;
+  margin: 0;
+}
+
+.home-section,
+.guest-section {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#score-display-home {
+  color: #f94f6d;
+  background-color: #080001;
+  padding: 10px 40px 0px 40px;
+  font-family: CursedTimerUlil-Aznm;
+  font-size: 120px;
+  margin: 0;
+}
+
+#score-display-guest {
+  color: #f94f6d;
+  background-color: #080001;
+  padding: 10px 40px 0px 40px;
+  font-family: CursedTimerUlil-Aznm;
+  font-size: 120px;
+  margin: 0;
+}
+
+.container h1 {
+  color: #f9fafb;
+}
+
+.buttons button {
+  background-color: #111827;
+  border: 2px solid #9ca3af;
+  padding: 12px;
+  font-family: CursedTimerUlil-Aznm;
+  color: #9ca3af;
+  border-radius: 4px;
+  font-size: 20px;
+  margin: 20px 0px;
+}
+
+.buttons button:hover {
+  color: #f9fafb;
+  border: 2px solid #f9fafb;
+}
