@@ -1,0 +1,46 @@
+body {
+    font-family: arial;
+    background-color: rgb(29, 27, 27);
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    height: 100vh;         
+    margin: 0;  
+}
+
+.container {
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    width: 120px;
+    height: 100px;
+}
+
+p {
+    font-size: 36px;
+}
+
+button {
+    color: white;
+    background-color: rgb(45, 45, 201);
+    border: none;
+    border-radius: 4px;
+    padding: 0.8rem 2rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+@keyframes bounce {
+    0%   { transform: scale(1); }
+    30%  { transform: scale(0.9); }
+    50%  { transform: scale(1.1); }
+    70%  { transform: scale(0.95); }
+    100% { transform: scale(1); }
+  }
+  
+button:active {
+    animation: bounce 0.3s ease;
+}
